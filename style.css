@@ -1,0 +1,210 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+  position: relative;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align: top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #FF7361;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #FF7361;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+img {
+ height: 200px;
+ max-width: 100%;
+}
+.content{
+ margin-top: 50px;
+}
+.col-sm-4 {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: start;
+}
+
+.product {
+ background: #fff none repeat scroll 0 0;
+ border: 1px solid #c0c0c0;
+ height: 440px;
+ position: relative;
+ text-align: center;
+ transition: all 0.5s ease 0s;
+ margin-bottom: 20px;
+ margin-right: 20px;
+ padding: 15px;
+ font-family: 'Open Sans', sans-serif;
+
+}
+.product:hover {
+ box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+ padding: 15px 15px 15px 15px;
+}
+.product-img {
+ height: 200px;
+}
+.product-title a {
+ color: #000;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+.product-desc {
+    max-height: 60px;
+    overflow: hidden;
+}
+.miniDescription {
+	max-width: 200px;
+}
+.product-price {
+ bottom: 15px;
+ left: 0;
+ position: absolute;
+ width: 100%;
+ color: #d51e08;
+ font-size: 18px;
+ font-weight: 500;
+ font-family: 'Open Sans', sans-serif;
+}
+
+#footer {
+ position: fixed; /* Фиксированное положение */
+ left: 0; bottom: 0; /* Левый нижний угол */
+ padding: 10px; /* Поля вокруг текста */
+ background: #FF7361; /* Цвет фона */
+ color: #fff; /* Цвет текста */
+ width: 100%; /* Ширина слоя */
+ font-family: 'Open Sans', sans-serif;
+}
+
+.sitemap {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.sitemap a, .sitemap a:visited {color: #9d999d;}
+.sitemap a.current, .sitemap a:hover{color: #FF7361;}
+.sitemap a:before,
+.sitemap a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #FF7361;
+  transition: .8s;
+}
+.sitemap a:hover:before, .sitemap .current:before {left: 0;}
+.sitemap a:hover:after, .sitemap .current:after {right: 0;}   
+@media (max-width: 550px) {
+.sitemap {padding-top: 0;}
+.sitemap li {display: block;}
+.sitemap li:after {content: none;}
+.sitemap a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+.contact_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 20%;
+  font-family: 'Open Sans', sans-serif;
+}
+.contacts {
+  width: 300px;
+  margin-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+.index_container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  grid-template-rows: (3, 1fr);
+}
+.grid_header {
+  grid-area: 1 / 1 / 2 / 5;
+  text-align: center;
+  background-color: #FF7361;
+  width: 100%;
+  height: 200px;
+}
+.grid_content {
+  grid-area: 2 / 1 / 4 / 2;
+  text-align: center;
+  background-color: #606060;
+  width: 100%;
+  height: 600px;
+}
+.grid_sidebar {
+  grid-area: 2 / 2 / 4 / 5;
+  text-align: center;
+  background-color: darkred;
+  width: 100%;
+  height: 100%;
+}
+
+.aa1 {
+  text-decoration:none;
+}
+
